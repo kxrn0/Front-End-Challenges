@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -66,7 +68,8 @@ body {
     transform: rotateY(540deg);
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
     background: var(--gradient);
     position: absolute;
     width: 100%;
@@ -139,15 +142,19 @@ body {
 .card .ratings #rating-1::after {
     content: '1';
 }
+
 .card .ratings #rating-2::after {
     content: '2';
 }
+
 .card .ratings #rating-3::after {
     content: '3';
 }
+
 .card .ratings #rating-4::after {
     content: '4';
 }
+
 .card .ratings #rating-5::after {
     content: '5';
 }
@@ -189,10 +196,26 @@ body {
 
 .card-back .try-again-button {
     background: var(--green);
-    color: var(--white);   
+    color: var(--white);
 }
 
 .card-back .try-again-button:hover {
     background: var(--white);
     color: var(--green);
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 330px;
+    }
+
+    .card .ratings input[type="radio"] {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }   
+
+    .card-back .no-internet-image {
+        width: 100px;
+    }
 }

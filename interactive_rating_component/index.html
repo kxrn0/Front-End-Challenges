@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- 
+    no-internet.png : <a href="https://www.flaticon.com/free-icons/no-internet" title="no-internet icons">No-internet icons created by Freepik - Flaticon</a>
+   -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+  <title>Feedback</title>
+</head> 
+
+<body>
+    <div class="stuff">
+      <div class="card">
+        <div class="card-guts">
+          <div class="card-front">
+            <form action="http://httpbin.org/post" class="rating-form">
+              <div class="icon-wrapper"><img src="./images/icon-star.svg" alt="start icon"></div>
+              <h2 class="card-title">How did we do?</h2>
+              <p class="message">Please let us know how we did with your support request. All feedback is appreciated to help us improve
+                our offering!</p>
+              <fieldset class="ratings">
+                <input type="radio" name="rating" aria-label="1" id="rating-1" required>
+                <input type="radio" name="rating" aria-label="2" id="rating-2">
+                <input type="radio" name="rating" aria-label="3" id="rating-3">
+                <input type="radio" name="rating" aria-label="4" id="rating-4">
+                <input type="radio" name="rating" aria-label="5" id="rating-5">
+              </fieldset>
+              <button class="submit-button card-button">Submit</button>
+            </form>
+          </div>
+          <div class="card-back">
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

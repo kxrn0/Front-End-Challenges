@@ -1,0 +1,198 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: overpass;
+    src: url("./fonts/Overpass-Regular.ttf");
+}
+
+@font-face {
+    font-family: overpass-bold;
+    src: url("./fonts/Overpass-Bold.ttf");
+}
+
+:root {
+    --very-dark-blue: #131518;
+    --dark-blue: #262E38;
+    --medium-gray: #7C8798;
+    --light-gray: #969FAD;
+    --orange: #FC7614;
+    --white: #fff;
+    --green: #24D833;
+    --gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+}
+
+body {
+    background: var(--very-dark-blue);
+}
+
+.stuff {
+    margin: 100px auto;
+    width: fit-content;
+}
+
+.card {
+    background-color: transparent;
+    width: 412px;
+    height: 416px;
+    perspective: 1000px;
+}
+
+.card .card-button {
+    font-size: 15px;
+    font-family: overpass-bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 32px;
+    width: 100%;
+    height: 45px;
+    border-radius: 1000px;
+    border: none;
+    transition: background-color .33s, color .33s;
+}
+
+.card-guts {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform .66s;
+    transform-style: preserve-3d;
+}
+
+.card-guts.flipped {
+    transform: rotateY(540deg);
+}
+
+.card-front, .card-back {
+    background: var(--gradient);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 30px;
+    padding: 32px;
+}
+
+.card-front .icon-wrapper {
+    background: var(--dark-blue);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    width: 48px;
+    height: 48px;
+
+}
+
+.card .card-title {
+    color: var(--white);
+    font-family: overpass-bold;
+    font-size: 28px;
+}
+
+.card .message {
+    color: var(--light-gray);
+    font-family: overpass;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 15px;
+}
+
+.card .ratings {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .ratings input[type="radio"] {
+    appearance: none;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--dark-blue);
+}
+
+.card .ratings input[type="radio"] {
+    color: var(--medium-gray);
+    font-family: overpass-bold;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+    transition: background-color .33s, color .33s;
+}
+
+.card .ratings input[type="radio"]:hover {
+    background: var(--medium-gray);
+    color: var(--white);
+}
+
+.card .ratings input[type="radio"]:checked {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.card .ratings #rating-1::after {
+    content: '1';
+}
+.card .ratings #rating-2::after {
+    content: '2';
+}
+.card .ratings #rating-3::after {
+    content: '3';
+}
+.card .ratings #rating-4::after {
+    content: '4';
+}
+.card .ratings #rating-5::after {
+    content: '5';
+}
+
+.card-front .submit-button {
+    background: var(--orange);
+    color: var(--white);
+}
+
+.card-front .submit-button:hover {
+    background: var(--white);
+    color: var(--orange);
+}
+
+.card-back {
+    transform: rotateY(540deg);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-back .rating-feedback {
+    background: var(--dark-blue);
+    color: var(--orange);
+    font-family: overpass;
+    border-radius: 100px;
+    margin: 32px;
+    width: 193px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+}
+
+.card-back .no-internet-image {
+    width: 150px;
+    margin-bottom: 32px;
+}
+
+.card-back .try-again-button {
+    background: var(--green);
+    color: var(--white);   
+}
+
+.card-back .try-again-button:hover {
+    background: var(--white);
+    color: var(--green);
+}

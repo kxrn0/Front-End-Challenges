@@ -29,11 +29,11 @@ Users should be able to:
 
 ### Screenshot
 
-[shot of the screen](./images/cmp.png)
+[shot of the screen](./interactive_rating_component/images/cmp.png)
 
 It also provides feedback when there's an error
 
-[screen of the shooting](./images/cmp_0.png)
+[screen of the shooting](./interactive_rating_component/images/cmp_0.png)
 
 ### Links
 

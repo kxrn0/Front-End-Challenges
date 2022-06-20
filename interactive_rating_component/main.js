@@ -1,7 +1,7 @@
 const form = document.querySelector(".rating-form");
 const card = document.querySelector(".card-guts");
 const back = card.querySelector(".card-back");
-const imagsrc = document.createElement("img");
+const imgsrc = document.createElement("img");
 
 imgsrc.src = "./images/no-internet.png";
 

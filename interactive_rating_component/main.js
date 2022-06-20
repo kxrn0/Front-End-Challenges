@@ -1,6 +1,9 @@
 const form = document.querySelector(".rating-form");
 const card = document.querySelector(".card-guts");
 const back = card.querySelector(".card-back");
+const imagsrc = document.createElement("img");
+
+imgsrc.src = "./images/no-internet.png";
 
 form.addEventListener("submit", async event => {
     event.preventDefault();
@@ -63,7 +66,7 @@ function show_error_message(card, guts) {
     tryAgainButton.classList.add("try-again-button");
     tryAgainButton.classList.add("card-button");
 
-    image.src = "./images/no-internet.png";
+    image.src = imgsrc.src;
     image.setAttribute("alt", "no internet");
     cardTitle.innerText = "Something went wrong...";
     message.innerText = "Looks like there's no internet connection";

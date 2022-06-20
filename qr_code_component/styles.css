@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+@font-face {
+    font-family: outfit;
+    src: url("./fonts/Outfit-Regular.ttf");
+}
+
+@font-face {
+    font-family: outfit-bold;
+    src: url("./fonts/Outfit-Bold.ttf");
+}
+
+body {
+    background: var(--light-gray);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.component {
+    background: var(--white);
+    border-radius: 20px;
+    width: 320px;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.05);
+}
+
+.component img {
+    width: 288px;
+    height: 288px;
+    border-radius: 10px;
+}
+
+.component .header {
+    color: var(--dark-blue);
+    font-size: 22px;
+    font-family: outfit-bold;
+    line-height: 28px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.component .description {
+    color: var(--grayish-blue);
+    line-height: 19px;
+    font-size: 15px;
+    font-family: outfit;
+    margin: 20px;
+}

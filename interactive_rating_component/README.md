@@ -37,8 +37,8 @@ It also provides feedback when there's an error
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/kxrn0/Front-End-Challenges/tree/main/interactive_rating_component)
-- Live Site URL: [Live](https://kxrn0.github.io/Front-End-Challenges/interactive_rating_component/index.html)
+- Solution : [Solution](https://github.com/kxrn0/Front-End-Challenges/tree/main/interactive_rating_component)
+- Live : [Live](https://kxrn0.github.io/Front-End-Challenges/interactive_rating_component/index.html)
 
 ## My process
 

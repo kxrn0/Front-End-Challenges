@@ -37,8 +37,8 @@ It also provides feedback when there's an error
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/kxrn0/Front-End-Challenges/tree/main/interactive_rating_component)
-- Live Site URL: [Add live site URL here](https://kxrn0.github.io/Front-End-Challenges/interactive_rating_component/index.html)
+- Solution URL: [Solution](https://github.com/kxrn0/Front-End-Challenges/tree/main/interactive_rating_component)
+- Live Site URL: [Live](https://kxrn0.github.io/Front-End-Challenges/interactive_rating_component/index.html)
 
 ## My process
 
@@ -55,7 +55,7 @@ I practiced the use of async code, as well as graceful error handling when there
 
 ### Continued development
 
-I would like to add a loding spinner for when the connection is slow, however for now I'l consider this project completed.
+I would like to add a loding spinner for when the connection is slow, however for now I'll consider this project completed.
 
 ## Author
 

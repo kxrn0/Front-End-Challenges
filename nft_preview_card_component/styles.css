@@ -31,13 +31,12 @@
 
 body {
     background: var(--body-bg);
-    display: grid;
-    place-items: center;
     min-height: 100vh;
     position: relative;
 }
 
 .nft-card {
+    margin: 152px auto;
     background: var(--card-bg);
     width: 350px;
     padding: 24px;

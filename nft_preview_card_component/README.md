@@ -35,8 +35,8 @@ It can also show the entire image
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
-- [Live](https://your-live-site-url.com)
+- [Solution](https://github.com/kxrn0/Front-End-Challenges/tree/main/nft_preview_card_component)
+- [Live](https://kxrn0.github.io/Front-End-Challenges/nft_preview_card_component/index.html)
 
 ## My process
 

@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/kxrn0/Front-End-Challenges/tree/main/equalizer_landing_page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://kxrn0.github.io/Front-End-Challenges/equalizer_landing_page/index.html)
 
 ## My process
 

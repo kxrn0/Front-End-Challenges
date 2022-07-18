@@ -44,6 +44,7 @@ body {
 }
 
 .card .card-image {
+    display: block;
     width: 50%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;

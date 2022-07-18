@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Here](https://github.com/kxrn0/Front-End-Challenges/tree/main/product_preview_card_component)
+- Live Site URL: [Live](https://kxrn0.github.io/Front-End-Challenges/product_preview_card_component/index.html)
 
 ## My process
 
@@ -42,5 +42,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/kxrp)
+- Frontend Mentor - [@kxrp](https://www.frontendmentor.io/profile/kxrp)
 - Twitter - [kxrp](https://twitter.com/_by_me_0x177)

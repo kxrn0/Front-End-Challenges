@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cream: hsl(30, 38%, 92%);
+    --aurometal: #6C7289;
+    --aquamarine: #3D8168;
+    --gunmetal: #1C232B;
+    --deep-aquamarine: #1A4032;
+}
+
+@font-face {
+    font-family: monse;
+    src: url("./fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: monse-bold;
+    src: url("./fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: fren;
+    src: url("./fonts/Fraunces-Bold.ttf");
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: var(--cream);
+    min-height: 100vh;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    width: 600px;
+    display: flex;
+}
+
+.card .card-image {
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card .card-info {
+    padding: 32px;
+}
+
+.card .card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-info .vapor-title {
+    color: var(--aurometal);
+    text-transform: uppercase;
+    font-family: monse;
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    ;
+}
+
+.card .card-info h1 {
+    color: var(--gunmetal);
+    font-size: 32px;
+    font-family: fren;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.card .card-info .description {
+    font-family: monse;
+    font-size: 14px;
+    line-height: 23px;
+    color: var(--aurometal);
+    margin-bottom: 30px;
+}
+
+.card .card-info .price {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.card .card-info .price .deal {
+    color: var(--aquamarine);
+    font-family: fren;
+    font-size: 32px;
+}
+
+.card .card-info .price .original {
+    color: var(--aurometal);
+    font-family: monse;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.card .card-info .add-to-cart {
+    background: var(--aquamarine);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 62px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color .33s;
+}
+
+.card .card-info .add-to-cart p {
+    color: white;
+    font-family: monse-bold;
+    font-size: 14px;
+    align-self: center;
+    width: max-content;
+}
+
+@media screen and (min-width: 1000px) {
+    .card .card-info .add-to-cart:hover {
+        background: var(--deep-aquamarine);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        padding: 28px 16px;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 343px;
+    }
+
+    .card .card-image {
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card .card-info .add-to-cart:active {
+        background: var(--deep-aquamarine);
+    }
+}

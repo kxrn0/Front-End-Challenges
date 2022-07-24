@@ -24,4 +24,4 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Here](https://github.com/kxrn0/Front-End-Challenges/tree/main/order-summary-component-main)
-- Live Site URL: [There](https://kxrn0.github.io/Front-End-Challenges/order-summary-component-main/index.html)
+- Live Site URL: [There](https://kxrn0.github.io/Front-End-Challenges/order-summary-component-main.index.html)

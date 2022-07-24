@@ -23,5 +23,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Here](https://your-solution-url.com)
-- Live Site URL: [There](https://your-live-site-url.com)
+- Solution URL: [Here](https://github.com/kxrn0/Front-End-Challenges/tree/main/order-summary-component-main)
+- Live Site URL: [There](https://kxrn0.github.io/Front-End-Challenges/order-summary-component-main/index.html)

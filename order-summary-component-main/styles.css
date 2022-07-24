@@ -1,0 +1,210 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg: #E0E8FF;
+    --light-gray: #F7F9FF;
+    --light-blue: rgba(56, 42, 225, 0.190291);
+    --medium-blue: #766CF1;
+    --black: #1F2E55;
+    --gray: #717FA6;
+    --blue: #382AE1;
+}
+
+@font-face {
+    font-family: hat-medium;
+    src: url("./fonts/RedHatDisplay-Medium.ttf");
+}
+
+@font-face {
+    font-family: hat-bold;
+    src: url("./fonts/RedHatDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: hat-black;
+    src: url("./fonts/RedHatDisplay-Black.ttf");
+}
+
+body {
+    background-color: var(--body-bg);
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: white;
+    width: 450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .hero-image {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 45px;
+}
+
+.card .card-content {
+    margin: 0 48px 48px 48px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content .summary {
+    color: var(--black);
+    font-family: hat-black;
+    font-size: 28px;
+    margin-bottom: 17px;
+}
+
+.card-content .description {
+    color: var(--gray);
+    font-family: hat-medium;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-content .plan {
+    background: var(--light-gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 24px;
+    border-radius: 11px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.card-content .plan .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card-content .plan .price-point .title {
+    color: var(--black);
+    font-family: hat-black;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.card-content .plan .price-point .price {
+    color: var(--gray);
+    font-family: hat-medium;
+    font-size: 16px;
+}
+
+.card-content .plan a {
+    color: var(--blue);
+    font-family: hat-bold;
+    font-size: 14px;
+    transition: color .33s;
+}
+
+.card .proceed {
+    background: var(--blue);
+    color: white;
+    font-family: hat-black;
+    text-decoration: none;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-radius: 11px;
+    margin-bottom: 32px;
+    box-shadow: 0 20px 20px var(--light-blue);
+    transition: background-color .33s;
+}
+
+.card .cancel {
+    color: var(--gray);
+    font-family: hat-black;
+    font-size: 15px;
+    text-decoration: none;
+    transition: color .33s;
+}
+
+.card-content .plan a:hover {
+    color: var(--medium-blue);
+    text-decoration: none;
+}
+
+.card .proceed:hover {
+    background: var(--medium-blue);
+}
+
+.card .cancel:hover {
+    color: var(--black);
+}
+
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 327px;
+        margin: 70px auto;
+    }
+
+    .card .hero-image {
+        margin-bottom: 32px;
+    }
+
+    .card .card-content {
+        margin: 0;
+    }
+
+    .card .summary {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    .card-content .description {
+        font-size: 15px;
+        margin: 16px 32px 24px 32px;
+    }
+
+    .card-content .plan {
+        padding: 16px;
+        margin: 24px;
+        gap: 50px;
+        width: fit-content;
+    }
+
+    .card-content .price-point .title {
+        font-size: 14px;
+        width: max-content;
+    }
+
+    .card-content .price-point .price {
+        font-size: 14px;
+    }
+
+    .card .plan a {
+        font-size: 13px;
+    }
+
+    .card .proceed {
+        width: 280px;
+        margin: 24px;
+    }
+
+    .card .cancel {
+        margin-bottom: 32px;
+    }
+}

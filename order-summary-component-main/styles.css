@@ -34,7 +34,7 @@
 body {
     background-color: var(--body-bg);
     background-image: url("./images/pattern-background-desktop.svg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     display: grid;
     place-items: center;

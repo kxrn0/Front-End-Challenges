@@ -1,0 +1,15 @@
+.expandible-inf {
+    position: relative;
+    height: 0;
+    transition: height .33s;
+    overflow: hidden;
+}
+
+.expandible-content {
+    /* padding: 20px; */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top .33s;
+}
